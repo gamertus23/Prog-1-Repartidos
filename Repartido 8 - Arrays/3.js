@@ -11,4 +11,4 @@ function esAscendente (){
 return "es ascendente";
 }
 
-console.log(esAscendente())
+console.log(esAscendente());
