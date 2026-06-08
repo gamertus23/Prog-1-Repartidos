@@ -5,9 +5,11 @@ con 12, con 11, ... , con 0 hijos */
 
 function calcTamañoFamilias (arr){
     let resultado = new Array(13).fill(0);
-    
-
+    for (let i = 0 ; i < arr.length ; i++){
+        resultado[arr[i]] += 1;
+    }
+    return resultado;
 }
 
-let senso = [3, 1, 2, 3, 0, 1]
+let senso = [3, 1, 2, 3, 0, 1,10,10,10,10,10]
 console.log(calcTamañoFamilias(senso))
