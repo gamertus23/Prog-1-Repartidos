@@ -10,17 +10,27 @@ que el valor dado. Para el ejemplo, si se indica valor 16, debe retornarse (3 4)
 Nota: solamente considerar aquellos puntos en los que se registraron datos. */
 
 function temperatura(arr, valor){
-    let contar = new Array(arr.length).fill(0);
-    let resultado = new Array(arr.length).fill(0);
+    let contar = new Array(51).fill(0);
+    let resultado = new Array(51).fill(0);
 
-    for (let i = 0; i< arr.length -1; i+=2){
-        let pContro = arr[i]
-        let tempDeEsePt = arr[i + 1]
-        resultado[arr[i]]+=arr[i + 1]
-        contar[arr[i]]++
-    
+    for (let i = 0; i< arr.length -1; i += 2){
+        resultado[arr[i]]+=arr[i + 1];
+        contar[arr[i]]++;
     }
-        
+    
+    let res = [];
+
+    for (let i = 1 ; i <= 50; i++){
+        if(contar[i]>0){
+            let promedio = resultado[i]/contar[i];
+            if (promedio < valor){
+                res.push(i)
+            }
+        }
+    }       
+
+    return res;
+
 } 
 
 
