@@ -1,6 +1,101 @@
-/*10) Diseñar una página principal para un diario. La página tiene 3 secciones (“Información
-general”, “Política”, y “Economía”). En cada sección por dos artículos. En el aside poner la
-información del tiempo. En el pie poner “Diario”. Utilizar tags semánticos (section, article,
-aside, footer, etc). Agregar el estilo necesario para que todas las secciones tengan fondo gris
-y los artículos tengan fondo blanco. El pie debe tener fondo azul.*/
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renzo industries - Diario N°1</title>
+    
+    <style>
+        section{
+            background-color: grey;
+            padding: 15px;
+            margin-bottom: 20px;
 
+        }
+        article{
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        
+        }
+        aside{
+            background-color: lightblue;
+            padding: 15px;
+            margin-bottom: 20px;
+
+
+        }
+        footer{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diario</h1>
+    </header>
+
+    <main>
+
+        
+        <section>
+            <h2>Informacion general</h2>
+
+            <article>
+                <h3>Titulo del Articulo 1</h3>
+                <p>Texto del ejemplo del primer artuiculo de informacion general</p>
+            </article>
+
+            <article>
+                <h3>Titulo del Articulo 2</h3>
+                <p>Texto del ejemplo del segundo artuiculo de informacion general</p>
+            </article>
+        
+        </section>
+        
+        <section>
+            <h2>Politica</h2>
+
+            <article>
+                <h3>Titulo del Articulo 1</h3>
+                <p>Texto del ejemplo del primer artuiculo de informacion general</p>
+            </article>
+
+            <article>
+                <h3>Titulo del Articulo 2</h3>
+                <p>Texto del ejemplo del segundo artuiculo de informacion general</p>
+            </article>
+
+        </section>
+        
+        <section>
+            <h2>Economia</h2>
+
+            <article>
+                <h3>Titulo del Articulo 1</h3>
+                <p>Texto del ejemplo del primer artuiculo de informacion general</p>
+            </article>
+
+            <article>
+                <h3>Titulo del Articulo 2</h3>
+                <p>Texto del ejemplo del segundo artuiculo de informacion general</p>
+            </article>
+
+        </section>
+
+        <aside>
+            <h2>El tiempo</h2>
+            <p>Hoy: Soleado, 25°C</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Diario</p>
+    </footer>
+
+</body>
+</html>
