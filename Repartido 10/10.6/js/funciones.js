@@ -1,0 +1,1 @@
+/*6) Diseñar una página que ingrese un nombre, y si no está repetido, lo muestra en una lista */
