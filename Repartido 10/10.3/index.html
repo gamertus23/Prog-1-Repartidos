@@ -1,0 +1,37 @@
+<p>3. Diseñar una página que permita ingresar una palabra y al presionar un botón muestre en
+una tabla la palabra original y la indicación de si es palíndroma o no. Con cada nueva consulta
+se agrega la información en la tabla.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico 10.3</title>
+</head>
+<body>
+    <h2><label>Ingrese una palabra random</label></h2>
+    <input type="text" id="palabra">
+    
+    <input type="button" value="Verificar" id="verificar">
+    <br>   
+    
+
+    <p>(palíndroma es cuando una palabra se lee igual de izq a derch y de derech a izq.)</p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Palabra Ingresada</th><th>  Es palíndroma?  </th>
+            </tr>
+        </thead>
+        <tbody id="tabla">
+            <tr>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <script src="./js/funciones.js"></script>    
+</body>
+</html>
