@@ -1,12 +1,10 @@
 /*6) Diseñar una página que ingrese un nombre, y si no está repetido, lo muestra en una lista */
 
-const { createElement } = require("react");
-
 let nombres = [];
 window.addEventListener("load", inicio);
 
 function inicio(){
-    document.getElementById("siguiente").addEventListener("click", agregarNombre);
+    document.getElementById("siguiente").addEventListener("click", agregarNombre());
 }
 
 function agregarNombre() {
